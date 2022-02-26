@@ -1,2 +1,2 @@
 # unity-learning
-the repo in which i shwo what im learning fromt he official unity coarces
+the repo in which i show what im learning from the official unity coarces
