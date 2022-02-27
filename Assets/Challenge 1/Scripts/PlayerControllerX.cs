@@ -7,6 +7,9 @@ public class PlayerControllerX : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float verticalInput;
+    private int propSpeed = 15;
+
+    public GameObject Prop;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +28,8 @@ public class PlayerControllerX : MonoBehaviour
 
         // tilt the plane up/down based on up/down arrow keys
         transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime * verticalInput);
+
+        // make propeller spin
+        Prop.transform.Rotate(Vector3.forward * propSpeed);
     }
 }
