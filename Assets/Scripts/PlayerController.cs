@@ -27,6 +27,6 @@ public class PlayerController : MonoBehaviour
 		// fuckface hoo ha-ha
 		// jokes aside this is where we will have the vehicle start moving
 		transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed * vInput);
-		transform.Translate(Vector3.right * Time.deltaTime* turnSpeed * hInput);
+		transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * hInput);
 	}
 }
